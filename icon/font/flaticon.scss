@@ -1,0 +1,77 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?053227f4ea689b144e58facd95acf453") format("truetype"),
+url("./flaticon.woff?053227f4ea689b144e58facd95acf453") format("woff"),
+url("./flaticon.woff2?053227f4ea689b144e58facd95acf453") format("woff2"),
+url("./flaticon.eot?053227f4ea689b144e58facd95acf453#iefix") format("embedded-opentype"),
+url("./flaticon.svg?053227f4ea689b144e58facd95acf453#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "star": "\f101",
+    "shopping-cart": "\f102",
+    "message": "\f103",
+    "menu": "\f104",
+    "menu-1": "\f105",
+    "search": "\f106",
+    "call": "\f107",
+    "placeholder": "\f108",
+    "like": "\f109",
+    "facebook": "\f10a",
+    "linkedin": "\f10b",
+    "arrow-down-sign-to-navigate": "\f10c",
+    "right-arrow": "\f10d",
+);
+
+.flaticon-star:before {
+    content: map-get($flaticon-map, "star");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}
+.flaticon-message:before {
+    content: map-get($flaticon-map, "message");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-menu-1:before {
+    content: map-get($flaticon-map, "menu-1");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-like:before {
+    content: map-get($flaticon-map, "like");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-arrow-down-sign-to-navigate:before {
+    content: map-get($flaticon-map, "arrow-down-sign-to-navigate");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
